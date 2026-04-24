@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie DB</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Titel -->
+  <h1>Movie Database</h1>
+
+  <!-- Controls (knappar + search + sort) -->
+  <div class="controls">
+
+    <!-- Buttons -->
+    <button id="popularBtn">Popular</button>
+    <button id="topBtn">Top Rated</button>
+
+    <!-- Search -->
+    <input type="text" id="searchInput" placeholder="Search movie...">
+    <button id="searchBtn">Search</button>
+
+    <!-- Sorting -->
+    <select id="sortSelect">
+      <option value="">Sortera</option>
+      <option value="az">A-Z</option>
+      <option value="za">Z-A</option>
+      <option value="ratingAsc">Rating ↑</option>
+      <option value="ratingDesc">Rating ↓</option>
+    </select>
+
+  </div>
+
+  <!-- Movies container -->
+  <div id="movies"></div>
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
